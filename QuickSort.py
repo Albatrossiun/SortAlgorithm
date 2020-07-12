@@ -19,12 +19,12 @@ def _quickSort(list, left, right):
     while(pleft < pright):
         while(list[pright] > tmp and pright > pleft):
             pright = pright - 1
-        if(pright <= pleft):
+        if(pright == pleft):
             break
         list[pleft] = list[pright]
         while(list[pleft] <= tmp and pleft < pright):
             pleft = pleft + 1
-        if(pleft >= pright):
+        if(pleft == pright):
             break
         list[pright] = list[pleft]
     list[pleft] = tmp
