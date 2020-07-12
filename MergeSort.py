@@ -1,3 +1,6 @@
+import timeWrapper
+
+
 def _MergeSort(list,left,right):
     if(left >= right):
         return
@@ -28,7 +31,8 @@ def _MergeSort(list,left,right):
         p2 = p2 + 1
     for i in range(len(tmp)):
         list[i + left] = tmp[i]
-
+        
+@timeWrapper.time_me
 def MergeSort(list):
     _MergeSort(list,0,len(list)-1)
 
