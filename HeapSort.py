@@ -38,7 +38,7 @@ class Heap:
                 i = tmp
 
     def BuildHeap(self, list):
-        self._list = list
+        self._list = list.copy()
         for i in range(len(self._list)):
             self._AdjustDown(len(self._list) - 1 - i)  
         
@@ -100,7 +100,3 @@ if __name__ == "__main__":
 
     while(not h.Empty()):
         print(h.Pop())
-    
-
-
-    
