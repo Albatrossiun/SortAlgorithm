@@ -3,6 +3,7 @@
 import MergeSort
 import QuickSort
 import BubbleSort
+import HeapSort
 import random
 import os
 
@@ -18,4 +19,7 @@ if __name__ == "__main__":
     a = arr.copy()
     MergeSort.MergeSort(a)
     a = arr.copy()
+    HeapSort.HeapSort(a)
+    a = arr.copy()
     BubbleSort.BubbleSort(a)
+
